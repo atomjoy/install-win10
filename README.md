@@ -3,7 +3,7 @@ How to create Windows bootable usb from linux Debian 13.
 
 ## Windows bootable usb
 
-Download Windows10 ISO
+Download Windows10 ISO and install gparted.
 
 ```sh
 1. Run gparted select your usb
