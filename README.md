@@ -22,6 +22,9 @@ Download Windows10 ISO
 ## Debian bootable usb (only linux iso)
 
 ```sh
+# Add path
+PATH="/sbin:$PATH"
+
 # Check usb device name
 df or fdisk -l
 
