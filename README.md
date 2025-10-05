@@ -14,7 +14,7 @@ Download Windows10 ISO
 4. Mount iso (click 2 times)
 5. Copy all files from iso to NTFS partition 
 6. Copy all files from iso without sources to fat32 partition
-7. Create sources directory in fat32 partition and copy /sources/boot.win from iso files to this directory
+7. Create sources directory on fat32 partition and copy /sources/boot.win from iso files to this directory
 8. Remove usb safely. Thats all.
 ```
 
