@@ -1,7 +1,7 @@
 # Install Windows 10 from Linux
 How to create Windows bootable usb from linux Debian 13.
 
-## Run
+## Windows bootable usb
 
 Download Windows10 ISO
 
@@ -18,3 +18,13 @@ Download Windows10 ISO
 8. Remove usb safely. Thats all.
 ```
 
+
+## Debian bootable usb (only linux iso)
+
+```sh
+# Check usb device name
+df or fdisk -l
+
+# Copy iso
+sudo dd if=debian-13.iso of=/dev/sdb bs=4M status=progress oflag=sync
+```
