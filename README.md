@@ -31,3 +31,16 @@ df or fdisk -l
 # Copy iso
 sudo dd if=debian-13.iso of=/dev/sdb bs=4M status=progress oflag=sync
 ```
+
+## Partition
+
+```sh
+# Fat
+fat32 Single file limit 4GB
+NTFS No file limit (Windows big files)
+exFat SD cards, pendrive (compatybility)
+
+# Devices
+msdos MBR < 2TB old bios systems
+GPT > 2TB big devices
+```
