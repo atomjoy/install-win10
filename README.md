@@ -39,8 +39,8 @@ sudo dd if=debian-13.iso of=/dev/sdb bs=4M status=progress oflag=sync
 
 ```sh
 # Fat
-fat32 Single file limit 4GB
-NTFS No file limit (Windows big files)
+NTFS No file size limit (Windows, Linux big files), multisystems device.
+fat32 Single file size limit 4GB (Windows devices), copy error for files bigger than 4GB.
 exFat SD cards, pendrive (compatybility)
 
 # Devices
