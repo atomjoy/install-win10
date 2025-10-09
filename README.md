@@ -1,7 +1,7 @@
 # Install Windows 10 from Linux
-How to create Windows bootable usb from linux Debian 13.
+How to create Windows bootable usb from linux Debian 13 (huawei).
 
-## Windows bootable usb
+## Windows 10 bootable usb
 
 Download Windows10 ISO and install gparted.
 
@@ -28,11 +28,14 @@ PATH="/sbin:$PATH"
 # Check usb device name
 df or fdisk -l
 
+# Unmount optional
+umount /dev/sdb
+
 # Copy iso
 sudo dd if=debian-13.iso of=/dev/sdb bs=4M status=progress oflag=sync
 ```
 
-## Partition
+## Partitioning
 
 ```sh
 # Fat
@@ -41,6 +44,10 @@ NTFS No file limit (Windows big files)
 exFat SD cards, pendrive (compatybility)
 
 # Devices
-msdos MBR < 2TB old bios systems
-GPT > 2TB big devices
+msdos MBR < 2TB disk old bios pc
+GPT > 2TB disk new bios pc
 ```
+
+## Windows 10 32 bit for old pc
+
+Use isotousb or rufus and create bootable iso from windows.
